@@ -5,7 +5,7 @@ const User = require("../models/User");
 const JWT_SECRET = process.env.JWT_SECRET;
 
 const generateToken = (id) =>
-  jwt.sign({ id: id }, process.env.JWT_SECRET, { expiresIn: "50000h" });
+  jwt.sign({ id: id }, process.env.JWT_SECRET, { expiresIn: "1000d" });
 
 exports.register = async (req, res) => {
   try {
