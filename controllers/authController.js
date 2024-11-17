@@ -26,6 +26,10 @@ exports.register = async (req, res) => {
     res.status(201).json({
       _id: user._id,
       email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      phoneNumber: user.phoneNumber,
+      dateOfBirth: user.dateOfBirth,
       token: generateToken(user._id),
     });
   } catch (error) {
@@ -41,6 +45,10 @@ exports.login = async (req, res) => {
       res.json({
         _id: user._id,
         email: user.email,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        phoneNumber: user.phoneNumber,
+        dateOfBirth: user.dateOfBirth,
         token: generateToken(user._id),
       });
     } else {
