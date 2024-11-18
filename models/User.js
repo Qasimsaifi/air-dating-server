@@ -7,8 +7,6 @@ const flightPreferenceSchema = new mongoose.Schema({
   flightNumber: { type: String, default: "" },
   class: {
     type: String,
-    enum: ["economy", "business", "first"],
-    default: "economy",
   },
   seatNumber: { type: String, default: "" },
 });

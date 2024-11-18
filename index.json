@@ -1,14 +1,15 @@
 [
   {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
+    "firstName": "Aarav",
+    "lastName": "Sharma",
+    "email": "aarav.sharma@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567890",
+    "phoneNumber": "+919876543210",
     "dateOfBirth": "1990-05-15",
+    "gender": "Male",
     "flightPreferences": {
-      "pnr": "PNR12345",
-      "flightNumber": "AA101",
+      "pnr": "PNR001",
+      "flightNumber": "AI101",
       "class": "economy",
       "seatNumber": "12A"
     },
@@ -16,15 +17,16 @@
     "isActive": true
   },
   {
-    "firstName": "Jane",
-    "lastName": "Smith",
-    "email": "jane.smith@example.com",
+    "firstName": "Ishita",
+    "lastName": "Verma",
+    "email": "ishita.verma@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567891",
+    "phoneNumber": "+919876543211",
     "dateOfBirth": "1988-07-20",
+    "gender": "Female",
     "flightPreferences": {
-      "pnr": "PNR12346",
-      "flightNumber": "BA102",
+      "pnr": "PNR001",
+      "flightNumber": "AI102",
       "class": "business",
       "seatNumber": "1B"
     },
@@ -32,15 +34,16 @@
     "isActive": true
   },
   {
-    "firstName": "Michael",
-    "lastName": "Johnson",
-    "email": "michael.johnson@example.com",
+    "firstName": "Rohan",
+    "lastName": "Gupta",
+    "email": "rohan.gupta@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567892",
+    "phoneNumber": "+919876543212",
     "dateOfBirth": "1995-10-10",
+    "gender": "Male",
     "flightPreferences": {
-      "pnr": "PNR12347",
-      "flightNumber": "CA303",
+      "pnr": "PNR001",
+      "flightNumber": "AI103",
       "class": "economy",
       "seatNumber": "20C"
     },
@@ -48,15 +51,16 @@
     "isActive": true
   },
   {
-    "firstName": "Emily",
-    "lastName": "Davis",
-    "email": "emily.davis@example.com",
+    "firstName": "Ananya",
+    "lastName": "Reddy",
+    "email": "ananya.reddy@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567893",
+    "phoneNumber": "+919876543213",
     "dateOfBirth": "1992-03-25",
+    "gender": "Female",
     "flightPreferences": {
-      "pnr": "PNR12348",
-      "flightNumber": "DA404",
+      "pnr": "PNR001",
+      "flightNumber": "AI104",
       "class": "first",
       "seatNumber": "2D"
     },
@@ -64,15 +68,16 @@
     "isActive": true
   },
   {
-    "firstName": "David",
-    "lastName": "Brown",
-    "email": "david.brown@example.com",
+    "firstName": "Aditya",
+    "lastName": "Nair",
+    "email": "aditya.nair@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567894",
+    "phoneNumber": "+919876543214",
     "dateOfBirth": "1985-09-15",
+    "gender": "Male",
     "flightPreferences": {
-      "pnr": "PNR12349",
-      "flightNumber": "EA505",
+      "pnr": "PNR001",
+      "flightNumber": "AI105",
       "class": "economy",
       "seatNumber": "15E"
     },
@@ -80,15 +85,16 @@
     "isActive": true
   },
   {
-    "firstName": "Sarah",
-    "lastName": "Wilson",
-    "email": "sarah.wilson@example.com",
+    "firstName": "Pooja",
+    "lastName": "Chowdhury",
+    "email": "pooja.chowdhury@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567895",
+    "phoneNumber": "+919876543215",
     "dateOfBirth": "1998-12-01",
+    "gender": "Female",
     "flightPreferences": {
-      "pnr": "PNR12350",
-      "flightNumber": "FA606",
+      "pnr": "PNR001",
+      "flightNumber": "AI106",
       "class": "business",
       "seatNumber": "3F"
     },
@@ -96,15 +102,16 @@
     "isActive": true
   },
   {
-    "firstName": "Chris",
-    "lastName": "Taylor",
-    "email": "chris.taylor@example.com",
+    "firstName": "Karan",
+    "lastName": "Patel",
+    "email": "karan.patel@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567896",
+    "phoneNumber": "+919876543216",
     "dateOfBirth": "1991-04-18",
+    "gender": "Male",
     "flightPreferences": {
-      "pnr": "PNR12351",
-      "flightNumber": "GA707",
+      "pnr": "PNR001",
+      "flightNumber": "AI107",
       "class": "economy",
       "seatNumber": "8G"
     },
@@ -112,15 +119,16 @@
     "isActive": true
   },
   {
-    "firstName": "Laura",
-    "lastName": "Anderson",
-    "email": "laura.anderson@example.com",
+    "firstName": "Sneha",
+    "lastName": "Das",
+    "email": "sneha.das@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567897",
+    "phoneNumber": "+919876543217",
     "dateOfBirth": "1989-11-30",
+    "gender": "Female",
     "flightPreferences": {
-      "pnr": "PNR12352",
-      "flightNumber": "HA808",
+      "pnr": "PNR001",
+      "flightNumber": "AI108",
       "class": "first",
       "seatNumber": "1A"
     },
@@ -128,15 +136,16 @@
     "isActive": true
   },
   {
-    "firstName": "Robert",
-    "lastName": "Thomas",
-    "email": "robert.thomas@example.com",
+    "firstName": "Vikram",
+    "lastName": "Singh",
+    "email": "vikram.singh@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567898",
+    "phoneNumber": "+919876543218",
     "dateOfBirth": "1993-02-15",
+    "gender": "Male",
     "flightPreferences": {
-      "pnr": "PNR12353",
-      "flightNumber": "IA909",
+      "pnr": "PNR001",
+      "flightNumber": "AI109",
       "class": "economy",
       "seatNumber": "21H"
     },
@@ -144,15 +153,16 @@
     "isActive": true
   },
   {
-    "firstName": "Jessica",
-    "lastName": "Martinez",
-    "email": "jessica.martinez@example.com",
+    "firstName": "Meera",
+    "lastName": "Iyer",
+    "email": "meera.iyer@example.com",
     "password": "hashed_password",
-    "phoneNumber": "+1234567899",
+    "phoneNumber": "+919876543219",
     "dateOfBirth": "1990-08-19",
+    "gender": "Female",
     "flightPreferences": {
-      "pnr": "PNR12354",
-      "flightNumber": "JA010",
+      "pnr": "PNR001",
+      "flightNumber": "AI110",
       "class": "business",
       "seatNumber": "4J"
     },

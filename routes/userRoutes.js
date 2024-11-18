@@ -7,11 +7,11 @@ const {
   getUserProfileById,
   updateUser,
   deleteUser,
-  getAllFlightPreferences,
   getFlightPreference,
   addFlightPreference,
   updateFlightPreference,
   deleteFlightPreference,
+  getDatingMatches,
 } = require("../controllers/userController");
 
 // Auth
@@ -25,10 +25,9 @@ router.put("/me", protect, updateUser);
 router.delete("/me", protect, deleteUser);
 
 // Flight Preferences
-router.get("/preferences", protect, getAllFlightPreferences);
-router.get("/preferences/:preferenceId", protect, getFlightPreference);
+router.get("/preferences", protect, getFlightPreference);
 router.post("/preferences", protect, addFlightPreference);
-router.put("/preferences/:preferenceId", protect, updateFlightPreference);
-router.delete("/preferences/:preferenceId", protect, deleteFlightPreference);
-
+router.put("/preferences", protect, updateFlightPreference);
+router.delete("/preferences", protect, deleteFlightPreference);
+router.get("/match", protect, getDatingMatches);
 module.exports = router;

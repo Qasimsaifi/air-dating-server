@@ -59,9 +59,9 @@ exports.getAllFlightPreferences = async (req, res) => {
 exports.getFlightPreference = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
-    const preference = user.flightPreferences.id(req.params.preferenceId);
+    const preference = user.flightPreferences[0];
     if (!preference)
-      return res.status(404).json({ message: "Preference not found" });
+      return res.status(404).json({ message: "No preference found" });
     res.json(preference);
   } catch (error) {
     res.status(400).json({ message: error.message });
@@ -71,7 +71,7 @@ exports.getFlightPreference = async (req, res) => {
 exports.addFlightPreference = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
-    user.flightPreferences.push(req.body);
+    user.flightPreferences = [req.body];
     await user.save();
     res
       .status(201)
@@ -84,14 +84,15 @@ exports.addFlightPreference = async (req, res) => {
 exports.updateFlightPreference = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
-    const preference = user.flightPreferences.id(req.params.preferenceId);
-    if (!preference)
-      return res.status(404).json({ message: "Preference not found" });
+    if (user.flightPreferences.length === 0)
+      return res.status(404).json({ message: "No preference found to update" });
 
-    Object.assign(preference, req.body); // Update the fields in the preference
+    user.flightPreferences[0] = req.body;
     await user.save();
-
-    res.json({ message: "Preference updated successfully", preference });
+    res.json({
+      message: "Preference updated successfully",
+      preference: req.body,
+    });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
@@ -100,15 +101,30 @@ exports.updateFlightPreference = async (req, res) => {
 exports.deleteFlightPreference = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
-    const preference = user.flightPreferences.id(req.params.preferenceId);
-    if (!preference)
-      return res.status(404).json({ message: "Preference not found" });
-
-    preference.remove();
+    user.flightPreferences = [];
     await user.save();
-
     res.json({ message: "Preference deleted successfully" });
   } catch (error) {
     res.status(400).json({ message: error.message });
+  }
+};
+exports.getDatingMatches = async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    const { pnr, class: userClass } = user.flightPreferences;
+
+    // Find users with the same PNR and class, and different gender
+    const matches = await User.find({
+      "flightPreferences.pnr": pnr,
+      "flightPreferences.class": userClass,
+      gender: { $ne: user.gender },
+      _id: { $ne: user._id }, // Exclude the current user
+    });
+
+    res.json({ matches });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
 };
