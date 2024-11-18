@@ -113,14 +113,27 @@ exports.getDatingMatches = async (req, res) => {
     const user = await User.findById(req.user._id);
     if (!user) return res.status(404).json({ message: "User not found" });
 
-    const { pnr, class: userClass } = user.flightPreferences;
+    // Ensure flightPreferences exists and has at least one item
+    if (!user.flightPreferences || user.flightPreferences.length === 0) {
+      return res.status(404).json({ message: "No flight preferences found" });
+    }
+
+    const { flightNumber, class: userClass } = user.flightPreferences[0];
+
+    // Check if userClass exists before calling toLowerCase()
+    if (!userClass) {
+      return res.status(400).json({ message: "Flight class not available" });
+    }
+
+    // Ensure the class is in lowercase for case-insensitive comparison
+    const userClassLower = userClass.toLowerCase();
 
     // Find users with the same PNR and class, and different gender
     const matches = await User.find({
-      "flightPreferences.pnr": pnr,
-      "flightPreferences.class": userClass,
+      "flightPreferences.flightNumber": flightNumber,
+      "flightPreferences.class": userClassLower,
       gender: { $ne: user.gender },
-      _id: { $ne: user._id }, // Exclude the current user
+      _id: { $ne: user._id },
     });
 
     res.json({ matches });
