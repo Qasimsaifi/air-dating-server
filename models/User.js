@@ -27,6 +27,7 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true, minlength: 6 },
     phoneNumber: { type: String, trim: true },
     dateOfBirth: { type: Date },
+    gender: { type: String, enum: ["Male", "Female", "Other"], required: true },
     flightPreferences: [flightPreferenceSchema],
     role: { type: String, enum: ["user", "admin"], default: "user" },
     isActive: { type: Boolean, default: true },

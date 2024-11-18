@@ -9,8 +9,15 @@ const generateToken = (id) =>
 
 exports.register = async (req, res) => {
   try {
-    const { email, password, firstName, lastName, phoneNumber, dateOfBirth } =
-      req.body;
+    const {
+      email,
+      password,
+      firstName,
+      lastName,
+      phoneNumber,
+      dateOfBirth,
+      gender,
+    } = req.body;
     if (await User.findOne({ email })) {
       return res.status(400).json({ message: "User already exists" });
     }
@@ -22,6 +29,7 @@ exports.register = async (req, res) => {
       lastName,
       phoneNumber,
       dateOfBirth,
+      gender,
     });
     res.status(201).json({
       _id: user._id,
@@ -30,6 +38,7 @@ exports.register = async (req, res) => {
       lastName: user.lastName,
       phoneNumber: user.phoneNumber,
       dateOfBirth: user.dateOfBirth,
+      gender: user.gender,
       token: generateToken(user._id),
     });
   } catch (error) {
@@ -49,6 +58,7 @@ exports.login = async (req, res) => {
         lastName: user.lastName,
         phoneNumber: user.phoneNumber,
         dateOfBirth: user.dateOfBirth,
+        gender: user.gender,
         token: generateToken(user._id),
       });
     } else {

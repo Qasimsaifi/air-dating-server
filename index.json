@@ -1,0 +1,162 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567890",
+    "dateOfBirth": "1990-05-15",
+    "flightPreferences": {
+      "pnr": "PNR12345",
+      "flightNumber": "AA101",
+      "class": "economy",
+      "seatNumber": "12A"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567891",
+    "dateOfBirth": "1988-07-20",
+    "flightPreferences": {
+      "pnr": "PNR12346",
+      "flightNumber": "BA102",
+      "class": "business",
+      "seatNumber": "1B"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "email": "michael.johnson@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567892",
+    "dateOfBirth": "1995-10-10",
+    "flightPreferences": {
+      "pnr": "PNR12347",
+      "flightNumber": "CA303",
+      "class": "economy",
+      "seatNumber": "20C"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "email": "emily.davis@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567893",
+    "dateOfBirth": "1992-03-25",
+    "flightPreferences": {
+      "pnr": "PNR12348",
+      "flightNumber": "DA404",
+      "class": "first",
+      "seatNumber": "2D"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "David",
+    "lastName": "Brown",
+    "email": "david.brown@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567894",
+    "dateOfBirth": "1985-09-15",
+    "flightPreferences": {
+      "pnr": "PNR12349",
+      "flightNumber": "EA505",
+      "class": "economy",
+      "seatNumber": "15E"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Wilson",
+    "email": "sarah.wilson@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567895",
+    "dateOfBirth": "1998-12-01",
+    "flightPreferences": {
+      "pnr": "PNR12350",
+      "flightNumber": "FA606",
+      "class": "business",
+      "seatNumber": "3F"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Chris",
+    "lastName": "Taylor",
+    "email": "chris.taylor@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567896",
+    "dateOfBirth": "1991-04-18",
+    "flightPreferences": {
+      "pnr": "PNR12351",
+      "flightNumber": "GA707",
+      "class": "economy",
+      "seatNumber": "8G"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Laura",
+    "lastName": "Anderson",
+    "email": "laura.anderson@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567897",
+    "dateOfBirth": "1989-11-30",
+    "flightPreferences": {
+      "pnr": "PNR12352",
+      "flightNumber": "HA808",
+      "class": "first",
+      "seatNumber": "1A"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "Thomas",
+    "email": "robert.thomas@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567898",
+    "dateOfBirth": "1993-02-15",
+    "flightPreferences": {
+      "pnr": "PNR12353",
+      "flightNumber": "IA909",
+      "class": "economy",
+      "seatNumber": "21H"
+    },
+    "role": "user",
+    "isActive": true
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "Martinez",
+    "email": "jessica.martinez@example.com",
+    "password": "hashed_password",
+    "phoneNumber": "+1234567899",
+    "dateOfBirth": "1990-08-19",
+    "flightPreferences": {
+      "pnr": "PNR12354",
+      "flightNumber": "JA010",
+      "class": "business",
+      "seatNumber": "4J"
+    },
+    "role": "user",
+    "isActive": true
+  }
+]
